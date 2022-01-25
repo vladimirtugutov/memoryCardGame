@@ -1,0 +1,19 @@
+<script defer src="/js/application.js"></script>
+<link rel="stylesheet" href="/stylesheets/statsstyle.css">
+<h1 class="header">Game statistics</h1>
+<br>
+<table>
+    <tr>
+        <th>Player</th>
+        <th>Score</th>
+    </tr>
+    {{#each gameList}}
+    <tr>
+        <td>{{this.player}}</td>
+        <td>{{this.score}}</td>
+    </tr>
+    <tr>
+        {{/each}}
+</table>
+<br>
+<a href="/" class="floating-button">Play again!</a>

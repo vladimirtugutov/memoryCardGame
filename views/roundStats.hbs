@@ -1,0 +1,13 @@
+<script defer src="/js/application.js"></script>
+<h1 class="header">Congratulations!</h1>
+<h1 class="header">Your score: {{playesGuessesCount}}</h1>
+<br>
+<br>
+<form method="POST" action="/allstats">
+    <input name="playerscore" type="hidden" value={{playesGuessesCount}}>
+    <label for="playername" class="header">Enter your name: </label>
+    <input class="inputname" name="playername" id="nameid" type="text" width="48" height="48">
+
+    <button class="floating-button" type="submit">Send</button>
+</form>
+

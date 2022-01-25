@@ -1,0 +1,76 @@
+cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+
+transform: rotateY(180deg);
+
+
+
+
+ <div id="map_canvas">!!!</div>
+    <script src="map.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDDuGt0E5IEGkcE6ZfrKfUtE9Ko_de66pA"></script>
+
+
+//   setTimeout(() => {
+//     for (let i = 1; i <= 8; i += 1) {
+//     sharp(`./public/images/image0${i}.jpeg`).resize({ height: 250, width: 250 }).toFile(`./public/images/resized_image0${i}.jpeg`);
+//     console.log(`resizing ${i} successful`);
+//     }
+//   }, 20000)
+//   for (let i = 1; i <= 8; i += 1) {
+//     await sharp(`./public/images/image0${i}.jpeg`).resize({ height: 250, width: 250 }).toFile(`./public/images/resized_image0${i}.jpeg`);
+//     await console.log(`resizing ${i} successful`);
+//   }
+
+  //   sharp('image.jpeg').resize(200,200)
+  //     .jpeg({quality : 50}).toFile(__dirname
+  //         + '/images/avatar_thumb.jpg');
+
+  //   await sharp('./image.jpeg').resize({ height: 225, width: 225 }).toFile('./image2.jpg');
+  // /*    .then((newFileInfo) => {
+  //       console.log('Success');
+  //     })
+  //     .catch((err) => {
+  //       console.log('Error occured');
+  //     });*/
+
+    //   fs.writeFile('./public/js/cat.jpeg', cat, (error) => {
+  //     if (error) throw error; // если возникла ошибка
+  //     console.log('Асинхронная запись файла завершена. Содержимое файла:');
+  //   });
+
+  app.get('/resize', async (req, res) => {
+    sharp('./image.jpeg').resize({ height: 225, width: 225 }).toFile('./image2.jpeg');
+    // /*    .then((newFileInfo) => {
+    //       console.log('Success');
+    //     })
+    //     .catch((err) => {
+    //       console.log('Error occured');
+    //     });*/
+    await res.end();
+  });
+
+
+  //       dogURLs.push(dogURL);
+//       console.log('~~~~~~~~~', dogURLs);
+//     } else {
+//       i -= 1;
+//     }
+    // if (dogURL.endsWith('.mp4')) {
+    //   console.log('NOOOOOOOOO!!!!!!!!!!!!~~~');
+    // }
+//   }
+//   for (let i = 1; i <= dogURLs.length; i += 1) {
+//     await download(dogURLs[i], i);
+//   }
+
+
+background: linear-gradient(to right, #acb6e5, #74ebd5);
+
+
+background: #2EE59D;
+
+<header class="header">
+<a class="logoutbutton" id="logoutbutton" href="/auth/logout">Выйти</a>
+</header>
